@@ -1,0 +1,30 @@
+# === Arborescence du dossier ===
+
+project_simple
+├── data
+│   ├── doc.odt
+│   └── table.ods
+├── src
+│   └── main.py
+└── README.md
+
+
+# === Contenu des fichiers ===
+
+--- Fichier : README.md ---
+# Projet Simple
+
+Fixture figée pour les tests de non-régression.
+Ne pas modifier ce fichier.
+
+--- Fichier : data/doc.odt ---
+[ERREUR lors de la lecture du fichier ODT: File is not a zip file]
+
+--- Fichier : data/table.ods ---
+
+
+--- Fichier : src/main.py ---
+# Fixture figée - ne pas modifier
+def hello():
+    return "hello"
+

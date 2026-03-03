@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "gentxt"
+dynamic = ["version"]
+description = "Outil de concaténation de fichiers en fichier texte unique"
+requires-python = ">=3.9"
+dependencies = [
+    "PySide6",
+    "pyexcel-ods3",
+    "odfpy",
+]
+
+[project.optional-dependencies]
+dev = ["ruff", "pytest", "pytest-cov", "mypy"]
+build = ["pyinstaller"]
+docs = [
+    "mkdocs<2.0",
+    "mkdocs-material<10.0",
+    "markdown<3.6",
+    "mkdocstrings[python]==0.24.0",
+    "mkdocs-autorefs==1.0.1",
+]
+
+[project.scripts]
+gentxt = "gentxt.main:main"
+
+[tool.setuptools.dynamic]
+version = {attr = "gentxt.__version__"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.mypy]
+python_version = "3.9"
+strict = true

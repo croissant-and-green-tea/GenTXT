@@ -1,0 +1,11 @@
+[run]
+source = src/gentxt
+omit =
+    src/gentxt/dialogs.py
+
+[report]
+show_missing = true
+skip_covered = false
+
+[html]
+directory = htmlcov

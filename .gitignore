@@ -1,0 +1,66 @@
+# === Python ===================================================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# === Virtualenvs ==============================================================
+venv/
+.venv/
+env/
+.env
+ENV/
+
+# === PyInstaller ==============================================================
+*.spec.bak
+*.manifest
+
+# === GenTXT artefacts =========================================================
+gentxt.txt
+gentxt_headless_error.log
+
+# === OS =======================================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+
+# === Éditeurs =================================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# === Documentation ============================================================
+site/
+/_hors_git/ 
+/test_mano/
+
+# === Tests ====================================================================
+.coverage
+htmlcov/
+```
+
+
+# Exclure les fichiers contenant le mot "temp" n'importe où dans le nom
+*temp**
+*TODO**
+/.concat_config.json
+
+
+docs/assets/
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+{
+    "exclude_tree_dirs": [],
+    "exclude_tree_files": [],
+    "exclude_tree_extensions": [],
+    "exclude_content_dirs": [],
+    "exclude_content_files": [],
+    "exclude_content_extensions": [".odt", ".ods"]
+}

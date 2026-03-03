@@ -1,0 +1,97 @@
+site_name: GenTXT Documentation
+site_description: Outil de concaténation de fichiers — génère un fichier texte unique contenant l'arborescence et le contenu d'un dossier, conçu pour l'export vers LLM.
+site_author: croissant-and-green-tea
+site_url: https://croissant-and-green-tea.github.io/GenTXT/
+repo_url: https://github.com/croissant-and-green-tea/GenTXT/
+repo_name: GenTXT
+edit_uri: edit/main/docs/
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: fr
+  icons: assets/icons.png
+  favicon: assets/icons.png
+  palette:
+    - scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Passer en mode sombre
+    - scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Passer en mode clair
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.action.edit
+
+plugins:
+  - search:
+      lang: fr
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [src]
+          options:
+            show_source: true
+            show_root_heading: true
+            show_category_heading: true
+            docstring_style: google
+            merge_init_into_class: true
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+  - tables
+  - attr_list
+  - pymdownx.snippets
+
+nav:
+  - Accueil: index.md
+  - Démarrage:
+      - getting-started/index.md
+      - Installation: getting-started/installation.md
+      - Démarrage rapide: getting-started/quickstart.md
+      - Configuration: getting-started/configuration.md
+  - Guide utilisateur:
+      - user-guide/index.md
+      - Interface graphique: user-guide/gui.md
+      - Mode headless: user-guide/headless.md
+      - Format de sortie: user-guide/output-format.md
+  - Référence:
+      - reference/index.md
+      - CLI: reference/cli.md
+      - Schéma de configuration: reference/config-schema.md
+      - API:
+          - core: reference/api/core.md
+          - config: reference/api/config.md
+          - headless: reference/api/headless.md
+          - dialogs: reference/api/dialogs.md
+  - Développement:
+      - development/index.md
+      - Architecture: development/architecture.md
+      - Contribuer: development/contributing.md
+      - Tests: development/testing.md
+      - Build & Release: development/build-release.md
+  - Changelog: changelog.md

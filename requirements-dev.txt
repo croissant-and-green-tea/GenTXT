@@ -1,0 +1,6 @@
+# Outils de développement et test
+-r requirements.txt
+ruff
+pytest
+pytest-cov
+mypy

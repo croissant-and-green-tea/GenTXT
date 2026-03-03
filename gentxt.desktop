@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=GenTxt
+Comment=Utilitaire de concaténation de fichiers
+Exec=/opt/gentxt/GenTXT
+Icon=gentxt
+Terminal=false
+Categories=Utility;Development;

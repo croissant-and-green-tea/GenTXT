@@ -1,0 +1,30 @@
+# === Arborescence du dossier ===
+
+ods_project
+└── fichier_ods_deux_pages.ods
+
+
+# === Contenu des fichiers ===
+
+--- Fichier : fichier_ods_deux_pages.ods ---
+=== Feuille: Sheet1 ===
+
+ID de Projet	Nom de la Tâche	Responsable	Date d'Échéance	Progression
+PROJ-001	Vestibulum ante ipsum primis in faucibus.	Aulus Gellius	2025-10-15	0.75
+PROJ-002	Curabitur vitae nunc sed velit dignissim.	Cicero Maximus	2025-11-01	0.4
+PROJ-003	Nulla facilisi. Morbi tempus iaculis urna.	Livia Drusilla	2025-10-22	0.9
+PROJ-004	Phasellus viverra nulla ut metus varius.	Marcus Aurelius	2025-12-05	0.2
+PROJ-005	Cras dapibus. Vivamus elementum semper.	Flavia Julia	2025-11-18	Terminé
+
+
+=== Feuille: Sheet2 ===
+
+Nom du Produit	Description	Statut	Prix
+Productus Dolo	Lorem ipsum dolor sit amet, consectetur adipiscing elit.	En Stock	24.99 EUR
+Consectetur Adip	Sed do eiusmod tempor incididunt ut labore et dolore.	Rupture de Stock	12.5 EUR
+Eiusmod Tempor	Ut enim ad minim veniam, quis nostrud exercitation.	En Stock	89.9 EUR
+Labore et Dolor	Duis aute irure dolor in reprehenderit in voluptate velit.	Disponible	45 EUR
+Minim Veniam	Excepteur sint occaecat cupidatat non proident.	En Stock	19.95 EUR
+
+
+

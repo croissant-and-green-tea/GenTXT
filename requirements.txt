@@ -1,0 +1,4 @@
+# Dépendances runtime uniquement
+PySide6
+pyexcel-ods3
+odfpy

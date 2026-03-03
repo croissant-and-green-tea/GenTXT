@@ -1,0 +1,25 @@
+# === Arborescence du dossier ===
+
+project_with_config
+├── src
+│   └── app.py
+└── .concat_config.json
+
+
+# === Contenu des fichiers ===
+
+--- Fichier : .concat_config.json ---
+{
+    "exclude_tree_dirs": [],
+    "exclude_tree_files": [],
+    "exclude_tree_extensions": [],
+    "exclude_content_dirs": [],
+    "exclude_content_files": [],
+    "exclude_content_extensions": [".odt", ".ods"]
+}
+
+--- Fichier : src/app.py ---
+# Fixture figée - ne pas modifier
+def run():
+    pass
+
