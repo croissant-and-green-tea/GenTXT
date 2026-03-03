@@ -20,15 +20,15 @@ if [ ! -f "$DESKTOP_FILE_SOURCE" ]; then
 fi
 
 # Vérification : l'exécutable a-t-il été compilé ?
-if [ ! -f "dist/GenTXT" ] && [ ! -f "dist/GenTxt" ]; then
+if [ ! -f "dist/gentxt" ] && [ ! -f "dist/GenTxt" ]; then
     echo "ERREUR : Aucun exécutable trouvé dans dist/"
     echo "Exécutez d'abord : pyinstaller GenTxt.spec"
     exit 1
 fi
 
 # Déterminer le nom exact de l'exécutable
-if [ -f "dist/GenTXT" ]; then
-    EXEC_SOURCE="dist/GenTXT"
+if [ -f "dist/gentxt" ]; then
+    EXEC_SOURCE="dist/gentxt"
 else
     EXEC_SOURCE="dist/GenTxt"
 fi
@@ -39,8 +39,8 @@ sudo mkdir -p "$INSTALL_DIR"
 
 # Copie de l'exécutable, de l'icône et du script headless
 echo "→ Copie de l'exécutable et de l'icône..."
-sudo cp "$EXEC_SOURCE" "$INSTALL_DIR/GenTXT"
-sudo chmod +x "$INSTALL_DIR/GenTXT"
+sudo cp "$EXEC_SOURCE" "$INSTALL_DIR/gentxt"
+sudo chmod +x "$INSTALL_DIR/gentxt"
 sudo cp "src/icons/icons.png" "$INSTALL_DIR/icons.png"
 sudo cp "concatenation_rapide.sh" "$INSTALL_DIR/concatenation_rapide.sh"
 sudo chmod +x "$INSTALL_DIR/concatenation_rapide.sh"

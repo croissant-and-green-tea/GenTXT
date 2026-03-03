@@ -20,16 +20,16 @@ def run_headless_mode() -> None:
         except OSError as e:
             print(f"Avertissement: Impossible de supprimer l'ancien fichier de log : {e}")
 
-    print("GenTXT: Mode Headless activé.")
+    print("gentxt: Mode Headless activé.")
     print(f"Répertoire source : {source_directory}")
     print(f"Fichier de sortie : {output_path}")
 
     try:
         concat_files(source_directory, output_path, headless_mode=True)
-        print(f"GenTXT: Succès ! Fichier généré : {output_path}")
+        print(f"gentxt: Succès ! Fichier généré : {output_path}")
     except Exception as e:
         error_message = (
-            f"GenTXT ERREUR: Une erreur est survenue lors de la concaténation headless:\n{e}\n"
+            f"gentxt ERREUR: Une erreur est survenue lors de la concaténation headless:\n{e}\n"
             f"Répertoire source tenté: {source_directory}\n"
             f"Fichier de sortie tenté: {output_path}\n"
         )
@@ -38,4 +38,4 @@ def run_headless_mode() -> None:
             with open(error_log_path, "w", encoding="utf-8") as f_err:
                 f_err.write(error_message)
         except Exception as log_e:
-            print(f"GenTXT ERREUR CRITIQUE: Impossible d'écrire le log : {log_e}")
+            print(f"gentxt ERREUR CRITIQUE: Impossible d'écrire le log : {log_e}")

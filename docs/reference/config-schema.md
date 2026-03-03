@@ -5,7 +5,7 @@
 
 ## Fichier
 
-`.concat_config.json` — placé à la racine du **dossier source** (pas du projet GenTXT).
+`.concat_config.json` — placé à la racine du **dossier source** (pas du projet gentxt).
 
 ## Clés disponibles
 

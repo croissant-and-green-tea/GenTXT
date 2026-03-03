@@ -1,8 +1,8 @@
 
 
-# GenTXT
+# gentxt
 
-**GenTXT** concatène l'arborescence et le contenu d'un dossier en un unique fichier texte.
+**gentxt** concatène l'arborescence et le contenu d'un dossier en un unique fichier texte.
 Cas d'usage principal : préparer un contexte projet complet à fournir à un LLM en une seule opération.
 
 ---
@@ -38,7 +38,7 @@ mon_projet/
 
 | | |
 |---|---|
-| [Installation](getting-started/installation.md) | Installer GenTXT depuis les sources ou en exécutable |
+| [Installation](getting-started/installation.md) | Installer gentxt depuis les sources ou en exécutable |
 | [Démarrage rapide](getting-started/quickstart.md) | Générer votre premier fichier en 2 minutes |
 | [Configuration](getting-started/configuration.md) | Contrôler les exclusions par projet |
 | [Référence API](reference/api/core.md) | Documentation des modules Python |
@@ -46,4 +46,4 @@ mon_projet/
 
 ## Licence
 
-MIT — voir [LICENCE](https://github.com/croissant-and-green-tea/GenTXT/LICENCE).
+MIT — voir [LICENCE](https://github.com/croissant-and-green-tea/gentxt/LICENCE).

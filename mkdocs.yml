@@ -1,9 +1,9 @@
-site_name: GenTXT Documentation
+site_name: gentxt Documentation
 site_description: Outil de concaténation de fichiers — génère un fichier texte unique contenant l'arborescence et le contenu d'un dossier, conçu pour l'export vers LLM.
 site_author: croissant-and-green-tea
-site_url: https://croissant-and-green-tea.github.io/GenTXT/
-repo_url: https://github.com/croissant-and-green-tea/GenTXT/
-repo_name: GenTXT
+site_url: https://croissant-and-green-tea.github.io/gentxt/
+repo_url: https://github.com/croissant-and-green-tea/gentxt/
+repo_name: gentxt
 edit_uri: edit/main/docs/
 docs_dir: docs
 site_dir: site

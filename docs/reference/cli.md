@@ -22,7 +22,7 @@ Les deux flags `--headless` et `--auto` sont strictement équivalents — l'un o
 
 ## Point d'entrée installé
 
-Si GenTXT est installé via `pip install -e .` ou `pip install .`, la commande `gentxt` est disponible directement :
+Si gentxt est installé via `pip install -e .` ou `pip install .`, la commande `gentxt` est disponible directement :
 
 ```bash
 gentxt             # mode GUI

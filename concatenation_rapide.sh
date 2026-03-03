@@ -4,12 +4,12 @@
 
 # Lance GenTxt en mode headless (sans interface graphique)
 # Gère les deux noms possibles de l'exécutable
-if [ -f "./GenTXT" ]; then
-    ./GenTXT --headless
+if [ -f "./gentxt" ]; then
+    ./gentxt --headless
 elif [ -f "./GenTxt" ]; then
     ./GenTxt --headless
 else
-    echo "ERREUR : Exécutable GenTXT/GenTxt introuvable dans le répertoire courant"
+    echo "ERREUR : Exécutable gentxt/GenTxt introuvable dans le répertoire courant"
     exit 1
 fi
 

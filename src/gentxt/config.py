@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-Module de gestion de la configuration pour GenTXT
+Module de gestion de la configuration pour gentxt
 """
 
 import os

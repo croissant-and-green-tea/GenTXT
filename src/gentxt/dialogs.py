@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-Module des dialogues pour GenTXT
+Module des dialogues pour gentxt
 """
 
 import os

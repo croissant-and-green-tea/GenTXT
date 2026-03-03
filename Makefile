@@ -9,7 +9,7 @@ SRC_DIR   := src
 DIST_DIR  := dist
 BUILD_DIR := build
 SPEC_FILE := GenTxt.spec
-EXEC_NAME := GenTXT
+EXEC_NAME := gentxt
 
 # === Aide =====================================================================
 

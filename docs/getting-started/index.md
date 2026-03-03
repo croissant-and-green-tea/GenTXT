@@ -2,7 +2,7 @@
 
 # Démarrage
 
-Tout ce qu'il faut pour installer GenTXT et produire votre premier fichier de concaténation.
+Tout ce qu'il faut pour installer gentxt et produire votre premier fichier de concaténation.
 
 - [Installation](installation.md) — prérequis, installation depuis les sources, exécutable Linux
 - [Démarrage rapide](quickstart.md) — générer `gentxt.txt` en mode GUI et headless

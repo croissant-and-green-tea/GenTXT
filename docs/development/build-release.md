@@ -19,7 +19,7 @@ make build
 # équivalent : pyinstaller GenTxt.spec
 ```
 
-L'exécutable est produit dans `dist/GenTXT` (Linux) ou `dist/GenTXT.exe` (Windows).
+L'exécutable est produit dans `dist/gentxt` (Linux) ou `dist/gentxt.exe` (Windows).
 
 `GenTxt.spec` configure :
 
@@ -73,7 +73,7 @@ make deploy-docs # déploiement GitHub Pages
 
 `install_gentxt.sh` effectue les opérations suivantes :
 
-- Copie `dist/GenTXT` dans `/opt/gentxt/`
+- Copie `dist/gentxt` dans `/opt/gentxt/`
 - Copie `concatenation_rapide.sh` dans `/opt/gentxt/`
 - Installe l'icône PNG dans `~/.local/share/icons/hicolor/{256x256,48x48}/apps/`
 - Crée `~/.local/share/applications/gentxt.desktop`

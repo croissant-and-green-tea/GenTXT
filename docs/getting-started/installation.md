@@ -20,8 +20,8 @@ OS supportés : **Linux** (testé), **Windows** (testé). macOS non officielleme
 ## Depuis les sources
 
 ```bash
-git clone https://github.com/croissant-and-green-tea/GenTXT.git
-cd GenTXT
+git clone https://github.com/croissant-and-green-tea/gentxt.git
+cd gentxt
 pip install -r requirements.txt
 ```
 
@@ -35,7 +35,7 @@ Vérification :
 
 ```bash
 python src/main.py --headless
-# → GenTXT: Mode Headless activé.
+# → gentxt: Mode Headless activé.
 ```
 
 ---
@@ -51,7 +51,7 @@ chmod +x install_gentxt.sh
 ./install_gentxt.sh
 ```
 
-Ce script installe GenTXT dans `/opt/gentxt/`, copie l'icône dans `~/.local/share/icons/hicolor/`, et crée le fichier `.desktop` dans `~/.local/share/applications/`.
+Ce script installe gentxt dans `/opt/gentxt/`, copie l'icône dans `~/.local/share/icons/hicolor/`, et crée le fichier `.desktop` dans `~/.local/share/applications/`.
 
 L'application devient alors accessible depuis le menu d'applications.
 
@@ -75,8 +75,8 @@ chmod +x uninstall_gentxt.sh
 === "Exécutable"
 
     ```bash
-    ./GenTXT
+    ./gentxt
     ```
 
-La fenêtre principale GenTXT doit s'ouvrir.
+La fenêtre principale gentxt doit s'ouvrir.
 

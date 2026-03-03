@@ -13,8 +13,8 @@
 === "Exécutable"
 
     ```bash
-    ./GenTXT          # Linux
-    GenTXT.exe        # Windows
+    ./gentxt          # Linux
+    gentxt.exe        # Windows
     ```
 
 ---

@@ -5,7 +5,7 @@
 
 ## Principe
 
-GenTXT cherche un fichier `.concat_config.json` à la racine du **dossier source** avant chaque exécution.
+gentxt cherche un fichier `.concat_config.json` à la racine du **dossier source** avant chaque exécution.
 
 - **Fichier présent** : la config est chargée et remplace intégralement les valeurs par défaut.
 - **Fichier absent ou invalide** : les valeurs par défaut s'appliquent (voir [Schéma de configuration](../reference/config-schema.md)).

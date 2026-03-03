@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Point d'entrée GenTXT — GUI PySide6."""
+"""Point d'entrée gentxt — GUI PySide6."""
 
 import os
 import sys
@@ -20,7 +20,7 @@ def _build_main_window():
     class MainWindow(QMainWindow):
         def __init__(self):
             super().__init__()
-            self.setWindowTitle("GenTXT - Concaténation v2.4.1")
+            self.setWindowTitle("gentxt - Concaténation v2.4.1")
             self.resize(500, 300)
 
             central_widget = QWidget()

@@ -96,13 +96,13 @@ jobs:
         run: pyinstaller GenTxt.spec
 
       - name: Verify
-        run: test -f dist/GenTXT
+        run: test -f dist/gentxt
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: GenTXT-linux
-          path: dist/GenTXT
+          name: gentxt-linux
+          path: dist/gentxt
           retention-days: 14
 
   # === Build Windows ========================================================
@@ -127,13 +127,13 @@ jobs:
 
       - name: Verify
         shell: pwsh
-        run: Test-Path dist/GenTXT.exe
+        run: Test-Path dist/gentxt.exe
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: GenTXT-windows
-          path: dist/GenTXT.exe
+          name: gentxt-windows
+          path: dist/gentxt.exe
           retention-days: 14
 
   # === Documentation ========================================================

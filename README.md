@@ -1,8 +1,8 @@
-# GenTXT
+# gentxt
 
 ## Présentation
 
-GenTXT est un outil de concaténation de fichiers permettant de générer un fichier texte unique contenant à la fois l’arborescence d’un dossier et le contenu de ses fichiers.
+gentxt est un outil de concaténation de fichiers permettant de générer un fichier texte unique contenant à la fois l’arborescence d’un dossier et le contenu de ses fichiers.
 Il est conçu pour faciliter l’export de projets sous forme de texte exploitable, notamment pour l’analyse automatique (par exemple par un LLM).
 
 ## Fonctionnalités
@@ -15,9 +15,9 @@ Il est conçu pour faciliter l’export de projets sous forme de texte exploitab
 ## Cas d’usage
 
 Vous disposez d’un dossier contenant plusieurs fichiers et souhaitez les regrouper dans un seul fichier `.txt`, par exemple afin de le fournir à un modèle de langage ou de l’archiver sous forme textuelle.
-GenTXT automatise cette opération en produisant un fichier texte unique regroupant l’ensemble des fichiers du dossier.
+gentxt automatise cette opération en produisant un fichier texte unique regroupant l’ensemble des fichiers du dossier.
 
-Il suffit d’indiquer le chemin du dossier à GenTXT pour obtenir un fichier `.txt` contenant tous les fichiers concaténés ainsi que leur organisation.
+Il suffit d’indiquer le chemin du dossier à gentxt pour obtenir un fichier `.txt` contenant tous les fichiers concaténés ainsi que leur organisation.
 
 ## Interface
 
@@ -36,7 +36,7 @@ Ces éléments ne seront alors pas inclus dans le fichier final généré.
 
 ## Utilisation
 
-GenTXT peut être utilisé :
+gentxt peut être utilisé :
 
 - en interface graphique (GUI),
 - ou en ligne de commande (CLI).
@@ -50,7 +50,7 @@ En interface graphique ou en cli.
 
 ## Documentation complète
 
--> [Docs](https://croissant-and-green-tea.github.io/GenTXT/) 
+-> [Docs](https://croissant-and-green-tea.github.io/gentxt/) 
 
 ## Licence
 

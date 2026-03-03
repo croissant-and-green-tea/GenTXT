@@ -4,7 +4,7 @@
 
 ## Mode GUI
 
-1. Lancer GenTXT (`python src/main.py` ou exécutable)
+1. Lancer gentxt (`python src/main.py` ou exécutable)
 2. Cliquer **Démarrer**
 3. Naviguer jusqu'au dossier à concaténer, valider
 4. Le fichier `gentxt.txt` est généré dans ce dossier
@@ -19,7 +19,7 @@ Depuis n'importe quel dossier :
 
 ```bash
 cd /chemin/vers/mon_projet
-python /chemin/vers/GenTXT/src/main.py --headless
+python /chemin/vers/gentxt/src/main.py --headless
 ```
 
 Ou avec le script fourni (Linux) :

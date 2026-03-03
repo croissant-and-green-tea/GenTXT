@@ -234,7 +234,7 @@ def concat_files(source_directory: str, output_file: str, headless_mode: bool = 
     if file_errors:
         error_summary = "\n".join(f"  - {path}: {err}" for path, err in file_errors)
         if headless_mode:
-            print(f"GenTXT: {len(file_errors)} fichier(s) en erreur :\n{error_summary}")
+            print(f"gentxt: {len(file_errors)} fichier(s) en erreur :\n{error_summary}")
         else:
             print(f"Avertissement : {len(file_errors)} fichier(s) en erreur :\n{error_summary}")
 

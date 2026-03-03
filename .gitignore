@@ -24,7 +24,7 @@ ENV/
 *.spec.bak
 *.manifest
 
-# === GenTXT artefacts =========================================================
+# === gentxt artefacts =========================================================
 gentxt.txt
 gentxt_headless_error.log
 

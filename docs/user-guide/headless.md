@@ -24,7 +24,7 @@ Avec l'exécutable :
 
 ```bash
 cd /chemin/vers/mon_projet
-/opt/gentxt/GenTXT --headless
+/opt/gentxt/gentxt --headless
 ```
 
 ---
@@ -39,7 +39,7 @@ chmod +x concatenation_rapide.sh
 ./concatenation_rapide.sh
 ```
 
-Le script gère les deux noms d'exécutables possibles (`GenTXT` et `GenTxt`) et s'arrête avec un message explicite si aucun n'est trouvé.
+Le script gère les deux noms d'exécutables possibles (`gentxt` et `GenTxt`) et s'arrête avec un message explicite si aucun n'est trouvé.
 
 ---
 
@@ -55,7 +55,7 @@ make headless   # équivalent à : python src/main.py --headless
 
 ```yaml
 # .github/workflows/generate-context.yml
-- name: Generate GenTXT context
+- name: Generate gentxt context
   run: |
     cd ${{ github.workspace }}
     python src/main.py --headless
@@ -69,7 +69,7 @@ make headless   # équivalent à : python src/main.py --headless
 En cas d'échec, `gentxt_headless_error.log` est créé dans le répertoire courant.
 
 ```text
-GenTXT ERREUR: Une erreur est survenue lors de la concaténation headless:
+gentxt ERREUR: Une erreur est survenue lors de la concaténation headless:
 <traceback>
 Répertoire source tenté: /chemin/source
 Fichier de sortie tenté: /chemin/source/gentxt.txt

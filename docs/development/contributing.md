@@ -5,8 +5,8 @@
 ## Setup développement
 
 ```bash
-git clone https://github.com/croissant-and-green-tea/GenTXT.git
-cd GenTXT
+git clone https://github.com/croissant-and-green-tea/gentxt.git
+cd gentxt
 pip install -r requirements-dev.txt
 ```
 

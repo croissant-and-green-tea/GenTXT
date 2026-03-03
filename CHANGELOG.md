@@ -88,7 +88,7 @@ Ajouté
 - Fichier `.desktop` pour intégration au menu d'applications et au dock Linux
 - Script shell `concat_ici.sh` pour mode headless sur Linux (équivalent du `.bat` Windows)
 - Documentation Linux complète `README_LINUX.md`
-- Détection automatique du nom d'exécutable (GenTXT/GenTxt) dans les scripts
+- Détection automatique du nom d'exécutable (gentxt/GenTxt) dans les scripts
 
 ### Modifié
 - **Migration de Tkinter vers PySide6** : Interface graphique modernisée
@@ -102,7 +102,7 @@ Ajouté
 - Structure du projet pour supporter Windows et Linux simultanément
 
 ### Technique
-- Exécutable Linux généré : `dist/GenTXT` (sans extension)
+- Exécutable Linux généré : `dist/gentxt` (sans extension)
 - Installation par défaut : `/opt/gentxt/` (Linux) ou portable (Windows)
 - Fichier `.desktop` : `~/.local/share/applications/gentxt.desktop` (Linux)
 - Logique métier (concaténation, configuration JSON, mode headless) **inchangée**
@@ -155,7 +155,7 @@ Modification du .concat_config.json
 
 ## [1.0.0] - avant 2025-04-21
 
-Il s'agit de la version initiale de GenTXT.
+Il s'agit de la version initiale de gentxt.
 
 ### Added
 
