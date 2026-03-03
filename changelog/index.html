@@ -1,0 +1,1661 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Outil de concaténation de fichiers — génère un fichier texte unique contenant l'arborescence et le contenu d'un dossier, conçu pour l'export vers LLM.">
+      
+      
+        <meta name="author" content="croissant-and-green-tea">
+      
+      
+        <link rel="canonical" href="https://croissant-and-green-tea.github.io/GenTXT/changelog/">
+      
+      
+        <link rel="prev" href="../development/build-release/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/icons.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.3">
+    
+    
+      
+        <title>Changelog - GenTXT Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#changelog" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href=".." title="GenTXT Documentation" class="md-header__button md-logo" aria-label="GenTXT Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            GenTXT Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Changelog
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Passer en mode sombre"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Passer en mode sombre" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Passer en mode clair"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Passer en mode clair" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/croissant-and-green-tea/GenTXT/" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GenTXT
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Onglets" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Accueil
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../getting-started/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Démarrage
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../user-guide/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Guide utilisateur
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../reference/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Référence
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../development/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Développement
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Changelog
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="GenTXT Documentation" class="md-nav__button md-logo" aria-label="GenTXT Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    GenTXT Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/croissant-and-green-tea/GenTXT/" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GenTXT
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Accueil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../getting-started/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Démarrage
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Démarrage
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/quickstart/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Démarrage rapide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/configuration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../user-guide/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guide utilisateur
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guide utilisateur
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user-guide/gui/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interface graphique
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user-guide/headless/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mode headless
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user-guide/output-format/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Format de sortie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../reference/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Référence
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Référence
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/cli/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CLI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/config-schema/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Schéma de configuration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    API
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/api/core/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    core
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/api/config/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    config
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/api/headless/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    headless
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/api/dialogs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    dialogs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../development/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Développement
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Développement
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../development/architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../development/contributing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contribuer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../development/testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../development/build-release/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Build & Release
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/croissant-and-green-tea/GenTXT/edit/main/docs/changelog.md" title="Editer cette page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="changelog">Changelog<a class="headerlink" href="#changelog" title="Permanent link">&para;</a></h1>
+<h1 id="changelog_1">Changelog<a class="headerlink" href="#changelog_1" title="Permanent link">&para;</a></h1>
+<h2 id="241-2025-03-02">[2.4.1] -2025-03-02<a class="headerlink" href="#241-2025-03-02" title="Permanent link">&para;</a></h2>
+<p>Ajouté 
+- documentation
+- tests
+- makefile
+- ci cd github page avec tests et mkdocs automatique </p>
+<h2 id="240-2025-02-16">[2.4.0] - 2025-02-16<a class="headerlink" href="#240-2025-02-16" title="Permanent link">&para;</a></h2>
+<h3 id="ajoute">Ajouté<a class="headerlink" href="#ajoute" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Dialogues de sélection personnalisés avec barre d'adresse éditable</strong></li>
+<li>Remplacement des dialogues natifs par des dialogues Qt personnalisés</li>
+<li>Barre d'adresse toujours visible et éditable (copier-coller, modification directe)</li>
+<li>Navigation par double-clic dans les dossiers</li>
+<li>Bouton "Dossier parent" pour remonter dans l'arborescence</li>
+<li>Touche Entrée pour naviguer (ne valide plus automatiquement)</li>
+<li>
+<p>Affichage des fichiers et dossiers avec icônes (📁 📄)</p>
+</li>
+<li>
+<p><strong>Deux modes de démarrage distincts</strong></p>
+</li>
+<li>"Démarrer" : Enregistrement automatique dans le dossier source sous le nom <code>gentxt.txt</code></li>
+<li>
+<p>"Démarrer - Choisir destination" : Dialogue complet pour choisir l'emplacement et le nom</p>
+</li>
+<li>
+<p><strong>Interface de configuration simplifiée</strong></p>
+</li>
+<li>Format texte simple sans syntaxe JSON</li>
+<li>Une ligne par élément, sans guillemets ni virgules</li>
+<li>Format : <code># section_name</code> suivi des éléments ligne par ligne</li>
+<li>
+<p>Plus besoin de gérer l'indentation, les accolades ou la ponctuation JSON</p>
+</li>
+<li>
+<p><strong>Post-traitement automatique du fichier généré</strong></p>
+</li>
+<li>Réduction des passages à la ligne excessifs (5+ lignes vides → 2 lignes vides)</li>
+<li>
+<p>Améliore la lisibilité du fichier <code>gentxt.txt</code></p>
+</li>
+<li>
+<p><strong>Refactorisation complète du code</strong></p>
+</li>
+<li>Structure modulaire avec package <code>gentxt/</code></li>
+<li>Séparation des responsabilités :<ul>
+<li><code>config.py</code> : Gestion de la configuration</li>
+<li><code>core.py</code> : Logique de concaténation</li>
+<li><code>dialogs.py</code> : Interfaces graphiques</li>
+<li><code>main.py</code> : Point d'entrée (réduit de 945 à 185 lignes)</li>
+</ul>
+</li>
+<li>Dossier <code>assets/icons/</code> pour les ressources graphiques</li>
+<li>Meilleure maintenabilité et testabilité</li>
+</ul>
+<h3 id="modifie">Modifié<a class="headerlink" href="#modifie" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Configuration par défaut minimale</strong></li>
+<li>Plus d'exclusions par défaut sauf <code>.concat_config.json</code> et <code>gentxt.txt</code></li>
+<li>Listes <code>exclude_tree_dirs</code>, <code>exclude_tree_extensions</code>, <code>exclude_content_dirs</code>, <code>exclude_content_extensions</code> vides par défaut</li>
+<li>
+<p>L'utilisateur contrôle entièrement ce qui est exclu</p>
+</li>
+<li>
+<p><strong>Nom du fichier de sortie standardisé</strong></p>
+</li>
+<li>Toujours <code>gentxt.txt</code> (au lieu de <code>nom_dossier_gentxt.txt</code>)</li>
+<li>
+<p>Cohérence dans tous les modes (GUI et headless)</p>
+</li>
+<li>
+<p><strong>Taille de police augmentée globalement</strong></p>
+</li>
+<li>Passage de 9-10pt (défaut système) à 12pt</li>
+<li>
+<p>Meilleure lisibilité dans toute l'application</p>
+</li>
+<li>
+<p><strong>Ordre des boutons dans l'interface principale</strong></p>
+</li>
+<li>"Démarrer" en premier (usage le plus fréquent)</li>
+<li>"Démarrer - Choisir destination" en second</li>
+<li>"Créer / Modifier Configuration" en troisième</li>
+<li>"Quitter" en dernier</li>
+</ul>
+<h3 id="corrige">Corrigé<a class="headerlink" href="#corrige" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Arborescence incomplète et dysfonctionnelle</strong></li>
+<li>Les dossiers imbriqués s'affichent maintenant correctement</li>
+<li>Correction de la logique récursive dans <code>generate_tree()</code></li>
+<li>
+<p>Tous les niveaux de dossiers sont visibles avec la bonne indentation</p>
+</li>
+<li>
+<p><strong>Validation intempestive avec la touche Entrée</strong></p>
+</li>
+<li>La touche Entrée dans les dialogues navigue au lieu de valider</li>
+<li>Seul le bouton "OK" valide la sélection</li>
+<li>Interception des événements clavier via <code>keyPressEvent()</code></li>
+</ul>
+<h3 id="technique">Technique<a class="headerlink" href="#technique" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Migration de fichier unique (945 lignes) vers architecture modulaire (4 fichiers)</li>
+<li>Utilisation de regex pour le post-traitement (<code>re.sub()</code>)</li>
+<li>Import relatif du package : <code>from gentxt.core import concat_files</code></li>
+<li>Structure compatible avec PyInstaller pour compilation en exécutable  </li>
+</ul>
+<h2 id="230-2025-02-13">[2.3.0] - 2025-02-13<a class="headerlink" href="#230-2025-02-13" title="Permanent link">&para;</a></h2>
+<h3 id="ajoute_1">Ajouté<a class="headerlink" href="#ajoute_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Support Linux complet</strong> : GenTxt fonctionne maintenant nativement sur Linux</li>
+<li>Script d'installation automatique <code>install_gentxt.sh</code> pour Linux</li>
+<li>Fichier <code>.desktop</code> pour intégration au menu d'applications et au dock Linux</li>
+<li>Script shell <code>concat_ici.sh</code> pour mode headless sur Linux (équivalent du <code>.bat</code> Windows)</li>
+<li>Documentation Linux complète <code>README_LINUX.md</code></li>
+<li>Détection automatique du nom d'exécutable (GenTXT/GenTxt) dans les scripts</li>
+</ul>
+<h3 id="modifie_1">Modifié<a class="headerlink" href="#modifie_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Migration de Tkinter vers PySide6</strong> : Interface graphique modernisée</li>
+<li>Sélecteur de fichiers moderne avec support natif du copier-coller</li>
+<li>Support du Ctrl+A pour sélectionner/supprimer les chemins</li>
+<li>Autocomplétion et navigation clavier améliorées</li>
+<li>Look &amp; feel natif automatique selon l'OS (Windows/Linux/macOS)</li>
+<li>Performance et réactivité améliorées</li>
+<li><code>GenTxt.spec</code> : Chemins adaptés pour compatibilité multiplateforme + support PySide6</li>
+<li><code>requirements.txt</code> : Ajout de PySide6, remplacement de tkinter</li>
+<li>Structure du projet pour supporter Windows et Linux simultanément</li>
+</ul>
+<h3 id="technique_1">Technique<a class="headerlink" href="#technique_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Exécutable Linux généré : <code>dist/GenTXT</code> (sans extension)</li>
+<li>Installation par défaut : <code>/opt/gentxt/</code> (Linux) ou portable (Windows)</li>
+<li>Fichier <code>.desktop</code> : <code>~/.local/share/applications/gentxt.desktop</code> (Linux)</li>
+<li>Logique métier (concaténation, configuration JSON, mode headless) <strong>inchangée</strong></li>
+<li>Taille exécutable : +20-30 MB due aux bibliothèques Qt (compensé par meilleure UX)</li>
+</ul>
+<h3 id="notes">Notes<a class="headerlink" href="#notes" title="Permanent link">&para;</a></h3>
+<ul>
+<li>L'icône <code>.ico</code> génère un warning sur Linux (normal, format non supporté)</li>
+<li>Le icons PNG est utilisé pour l'affichage système sur Linux</li>
+<li>PySide6 nécessite Python 3.7+ minimum</li>
+<li>L'interface PySide6 est identique visuellement à Tkinter mais plus moderne et portable</li>
+</ul>
+<h2 id="220-2025-02-08">[2.2.0] - 2025-02-08<a class="headerlink" href="#220-2025-02-08" title="Permanent link">&para;</a></h2>
+<h3 id="added">Added<a class="headerlink" href="#added" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Prise en charge de la lecture des fichiers ODT (OpenDocument Text)</strong><ul>
+<li>Intégration de la bibliothèque <code>odfpy</code> pour extraire le contenu textuel des fichiers <code>.odt</code>.</li>
+<li>Le texte de chaque paragraphe du fichier ODT est extrait et inclus dans le fichier de sortie.</li>
+<li>Le programme affiche un message d'erreur informatif si un fichier <code>.odt</code> est rencontré mais que la bibliothèque requise n'est pas installée.</li>
+<li>La nouvelle dépendance a été ajoutée au fichier <code>requirements.txt</code>.</li>
+</ul>
+</li>
+</ul>
+<h3 id="changed">Changed<a class="headerlink" href="#changed" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Configuration par défaut</strong><ul>
+<li>L'extension <code>.odt</code> a été <strong>retirée</strong> de la liste d'exclusion par défaut (<code>DEFAULT_EXCLUDE_CONTENT_EXTENSIONS</code>).</li>
+<li>Les fichiers <code>.odt</code> sont maintenant traités par défaut et leur contenu textuel est extrait automatiquement.</li>
+</ul>
+</li>
+</ul>
+<h2 id="211-2025-10-16">[2.1.1] - 2025-10-16<a class="headerlink" href="#211-2025-10-16" title="Permanent link">&para;</a></h2>
+<p>Modification du .concat_config.json </p>
+<h2 id="210-2025-04-21">[2.1.0] - 2025-04-21<a class="headerlink" href="#210-2025-04-21" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p><strong>Prise en charge de la lecture des fichiers ODS (OpenDocument Spreadsheet)</strong></p>
+<ul>
+<li>Intégration de la bibliothèque <code>pyexcel-ods3</code> pour extraire les données des fichiers <code>.ods</code>.</li>
+<li>Le contenu de chaque feuille du fichier ODS est maintenant formaté et inclus dans le fichier de sortie, avec des en-têtes clairs pour identifier chaque feuille.</li>
+<li>Le programme affiche un message d'erreur informatif si un fichier <code>.ods</code> est rencontré mais que la bibliothèque requise n'est pas installée.</li>
+<li>La nouvelle dépendance a été ajoutée au fichier <code>requirements.txt</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Gestion des ressources</strong></p>
+<ul>
+<li>Ajout d'une nouvelle icône (<code>icons_v2.png</code>) dans le dossier <code>src</code>.</li>
+</ul>
+</li>
+</ul>
+<h3 id="changed_1">Changed<a class="headerlink" href="#changed_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Configuration par défaut</strong><ul>
+<li>Les extensions <code>.ods</code> et <code>.odt</code> ont été ajoutées à la liste d'exclusion par défaut pour le contenu (<code>DEFAULT_EXCLUDE_CONTENT_EXTENSIONS</code>).</li>
+<li><strong>Note :</strong> Pour activer la lecture des fichiers <code>.ods</code>, l'utilisateur doit manuellement retirer l'extension <code>".ods"</code> de la liste <code>exclude_content_extensions</code> dans son fichier de configuration <code>.concat_config.json</code>.</li>
+</ul>
+</li>
+</ul>
+<h2 id="100-avant-2025-04-21">[1.0.0] - avant 2025-04-21<a class="headerlink" href="#100-avant-2025-04-21" title="Permanent link">&para;</a></h2>
+<p>Il s'agit de la version initiale de GenTXT.</p>
+<h3 id="added_1">Added<a class="headerlink" href="#added_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>Moteur de Concaténation Principal</strong></p>
+<ul>
+<li>Génération d'une arborescence textuelle du répertoire source.</li>
+<li>Concaténation du contenu des fichiers texte dans un unique fichier de sortie.</li>
+<li>Détection basique des fichiers binaires pour éviter d'inclure leur contenu.</li>
+<li>Gestion des erreurs d'encodage lors de la lecture des fichiers (UTF-8 par défaut).</li>
+</ul>
+</li>
+<li>
+<p><strong>Système de Configuration</strong></p>
+<ul>
+<li>Introduction du fichier de configuration <code>.concat_config.json</code> à la racine du dossier source.</li>
+<li>Support pour six types d'exclusions :<ul>
+<li><code>exclude_tree_dirs</code>, <code>exclude_tree_files</code>, <code>exclude_tree_extensions</code> pour l'arborescence.</li>
+<li><code>exclude_content_dirs</code>, <code>exclude_content_files</code>, <code>exclude_content_extensions</code> pour le contenu.</li>
+</ul>
+</li>
+<li>Application de filtres d'exclusion par défaut si le fichier de configuration est absent ou invalide.</li>
+</ul>
+</li>
+<li>
+<p><strong>Mode GUI (Interface Graphique)</strong></p>
+<ul>
+<li>Interface utilisateur simple construite avec Tkinter.</li>
+<li>Fenêtre principale avec trois options : "Démarrer", "Configurer" et "Quitter".</li>
+<li>Boîtes de dialogue natives pour la sélection du dossier source et du fichier de destination.</li>
+<li>Éditeur de configuration intégré pour créer ou modifier le fichier <code>.concat_config.json</code> directement depuis l'application.</li>
+<li>Affichage de messages de succès ou d'erreur à la fin du processus.</li>
+</ul>
+</li>
+<li>
+<p><strong>Mode Headless (Ligne de Commande)</strong></p>
+<ul>
+<li>Activation via l'argument de ligne de commande <code>--headless</code> ou <code>--auto</code>.</li>
+<li>Le mode headless traite automatiquement le répertoire de travail courant.</li>
+<li>Génération automatique du nom du fichier de sortie (ex: <code>nom_du_dossier_gentxt.txt</code>).</li>
+<li>Script <code>concat_ici.bat</code> fourni pour un lancement rapide sous Windows.</li>
+<li>Création d'un fichier de log <code>gentxt_headless_error.log</code> en cas d'échec critique.</li>
+</ul>
+</li>
+<li>
+<p><strong>Packaging et Distribution</strong></p>
+<ul>
+<li>Configuration via <code>GenTxt.spec</code> pour compiler le projet en un seul exécutable <code>.exe</code> avec PyInstaller.</li>
+<li>Inclusion d'une icône personnalisée (<code>icons.ico</code>) pour l'exécutable.</li>
+<li>Le mode console est désactivé pour l'exécution en mode GUI.</li>
+</ul>
+</li>
+<li>
+<p><strong>Documentation</strong></p>
+<ul>
+<li>Création du fichier <code>README.md</code> initial détaillant toutes les fonctionnalités et les modes d'utilisation.</li>
+</ul>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Retour en haut de la page
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "navigation.indexes", "search.highlight", "search.suggest", "content.code.copy", "content.action.edit"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
