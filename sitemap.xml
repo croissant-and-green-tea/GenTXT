@@ -1,91 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://croissant-and-green-tea.github.io/GenTXT/</loc>
+         <loc>https://croissant-and-green-tea.github.io/gentxt/</loc>
          <lastmod>2026-03-03</lastmod>
     </url>
     <url>
-         <loc>https://croissant-and-green-tea.github.io/GenTXT/changelog/</loc>
+         <loc>https://croissant-and-green-tea.github.io/gentxt/changelog/</loc>
          <lastmod>2026-03-03</lastmod>
     </url>
     <url>
-         <loc>https://croissant-and-green-tea.github.io/GenTXT/development/</loc>
+         <loc>https://croissant-and-green-tea.github.io/gentxt/development/</loc>
          <lastmod>2026-03-03</lastmod>
     </url>
     <url>
-         <loc>https://croissant-and-green-tea.github.io/GenTXT/development/architecture/</loc>
+         <loc>https://croissant-and-green-tea.github.io/gentxt/development/architecture/</loc>
          <lastmod>2026-03-03</lastmod>
     </url>
     <url>
-         <loc>https://croissant-and-green-tea.github.io/GenTXT/development/build-release/</loc>
+         <loc>https://croissant-and-green-tea.github.io/gentxt/development/build-release/</loc>
          <lastmod>2026-03-03</lastmod>
     </url>
     <url>
-         <loc>https://croissant-and-green-tea.github.io/GenTXT/development/contributing/</loc>
+         <loc>https://croissant-and-green-tea.github.io/gentxt/development/contributing/</loc>
          <lastmod>2026-03-03</lastmod>
     </url>
     <url>
-         <loc>https://croissant-and-green-tea.github.io/GenTXT/development/testing/</loc>
+         <loc>https://croissant-and-green-tea.github.io/gentxt/development/testing/</loc>
          <lastmod>2026-03-03</lastmod>
     </url>
     <url>
-         <loc>https://croissant-and-green-tea.github.io/GenTXT/getting-started/</loc>
+         <loc>https://croissant-and-green-tea.github.io/gentxt/getting-started/</loc>
          <lastmod>2026-03-03</lastmod>
     </url>
     <url>
-         <loc>https://croissant-and-green-tea.github.io/GenTXT/getting-started/configuration/</loc>
+         <loc>https://croissant-and-green-tea.github.io/gentxt/getting-started/configuration/</loc>
          <lastmod>2026-03-03</lastmod>
     </url>
     <url>
-         <loc>https://croissant-and-green-tea.github.io/GenTXT/getting-started/installation/</loc>
+         <loc>https://croissant-and-green-tea.github.io/gentxt/getting-started/installation/</loc>
          <lastmod>2026-03-03</lastmod>
     </url>
     <url>
-         <loc>https://croissant-and-green-tea.github.io/GenTXT/getting-started/quickstart/</loc>
+         <loc>https://croissant-and-green-tea.github.io/gentxt/getting-started/quickstart/</loc>
          <lastmod>2026-03-03</lastmod>
     </url>
     <url>
-         <loc>https://croissant-and-green-tea.github.io/GenTXT/reference/</loc>
+         <loc>https://croissant-and-green-tea.github.io/gentxt/reference/</loc>
          <lastmod>2026-03-03</lastmod>
     </url>
     <url>
-         <loc>https://croissant-and-green-tea.github.io/GenTXT/reference/cli/</loc>
+         <loc>https://croissant-and-green-tea.github.io/gentxt/reference/cli/</loc>
          <lastmod>2026-03-03</lastmod>
     </url>
     <url>
-         <loc>https://croissant-and-green-tea.github.io/GenTXT/reference/config-schema/</loc>
+         <loc>https://croissant-and-green-tea.github.io/gentxt/reference/config-schema/</loc>
          <lastmod>2026-03-03</lastmod>
     </url>
     <url>
-         <loc>https://croissant-and-green-tea.github.io/GenTXT/reference/api/config/</loc>
+         <loc>https://croissant-and-green-tea.github.io/gentxt/reference/api/config/</loc>
          <lastmod>2026-03-03</lastmod>
     </url>
     <url>
-         <loc>https://croissant-and-green-tea.github.io/GenTXT/reference/api/core/</loc>
+         <loc>https://croissant-and-green-tea.github.io/gentxt/reference/api/core/</loc>
          <lastmod>2026-03-03</lastmod>
     </url>
     <url>
-         <loc>https://croissant-and-green-tea.github.io/GenTXT/reference/api/dialogs/</loc>
+         <loc>https://croissant-and-green-tea.github.io/gentxt/reference/api/dialogs/</loc>
          <lastmod>2026-03-03</lastmod>
     </url>
     <url>
-         <loc>https://croissant-and-green-tea.github.io/GenTXT/reference/api/headless/</loc>
+         <loc>https://croissant-and-green-tea.github.io/gentxt/reference/api/headless/</loc>
          <lastmod>2026-03-03</lastmod>
     </url>
     <url>
-         <loc>https://croissant-and-green-tea.github.io/GenTXT/user-guide/</loc>
+         <loc>https://croissant-and-green-tea.github.io/gentxt/user-guide/</loc>
          <lastmod>2026-03-03</lastmod>
     </url>
     <url>
-         <loc>https://croissant-and-green-tea.github.io/GenTXT/user-guide/gui/</loc>
+         <loc>https://croissant-and-green-tea.github.io/gentxt/user-guide/gui/</loc>
          <lastmod>2026-03-03</lastmod>
     </url>
     <url>
-         <loc>https://croissant-and-green-tea.github.io/GenTXT/user-guide/headless/</loc>
+         <loc>https://croissant-and-green-tea.github.io/gentxt/user-guide/headless/</loc>
          <lastmod>2026-03-03</lastmod>
     </url>
     <url>
-         <loc>https://croissant-and-green-tea.github.io/GenTXT/user-guide/output-format/</loc>
+         <loc>https://croissant-and-green-tea.github.io/gentxt/user-guide/output-format/</loc>
          <lastmod>2026-03-03</lastmod>
     </url>
 </urlset>
